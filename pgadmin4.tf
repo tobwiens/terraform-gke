@@ -13,12 +13,12 @@ resource "kubernetes_pod" "pgadmin4_pod" {
 
       env {
         name  = "PGADMIN_DEFAULT_EMAIL"
-        value = "tobwiens@gmail.com"
+        value = "quintin"
       }
 
       env {
         name  = "PGADMIN_DEFAULT_PASSWORD"
-        value = "secret"
+        value = var.pgadmin4_password
       }
 
       port {
