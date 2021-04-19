@@ -13,7 +13,7 @@ resource "kubernetes_pod" "pgadmin4_pod" {
 
       env {
         name  = "PGADMIN_DEFAULT_EMAIL"
-        value = "quintin"
+        value = "quintin@login.com"
       }
 
       env {
