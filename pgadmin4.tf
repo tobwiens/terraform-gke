@@ -9,7 +9,7 @@ resource "kubernetes_pod" "pgadmin4_pod" {
   spec {
     container {
       image = "dpage/pgadmin4:latest"
-      name  = "pgadmin4-lates"
+      name  = "pgadmin4-latest"
 
       env {
         name  = "PGADMIN_DEFAULT_EMAIL"
